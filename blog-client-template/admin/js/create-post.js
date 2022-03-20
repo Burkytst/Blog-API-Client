@@ -9,7 +9,8 @@ $("#CreatePost").click(function(){
     .then(function (response) {
       if(response){
         alert("Success!");
-        window.location.href="/blog-client-template/";
+        window.location.href="index.html";
+        /* window.location.href="/blog-client-template/"; */
       }
     })
     .catch(function (error) {

@@ -21,4 +21,8 @@ async function fetchPost(id) {
         console.log(error)
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ae6ee955145298c0170272b8eb97c595be5e930b
