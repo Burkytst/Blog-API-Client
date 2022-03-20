@@ -21,7 +21,7 @@ function CreateTableRow(data){
     <td>${data.author}</td>
     <td>${data.tags?data.tags:"-"}</td>
     <td>${data.date}</td>
-    <td><a href="/update/${data._id}">Update</a> | <a href="javascript:deletePost('${data._id}')">delete</a></td>
+    <td><a href="update-post.html?id=${data._id}">Update</a> | <a href="javascript:deletePost('${data._id}')">delete</a></td>
     </tr>`;
 }
 

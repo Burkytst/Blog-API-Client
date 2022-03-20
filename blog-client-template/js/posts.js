@@ -50,7 +50,7 @@ async function fetchPosts() {
         let author  = "";
         let title   = "";
         let text    = "";
-        let titleId = "";
+        let titleId = null;
 
         // Changes to unknown author if post.authur equals null. Looks better that way.
         if (post.author == null) {

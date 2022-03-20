@@ -6,12 +6,12 @@ window.onload = function() {
     var titleId  = url.substring(url.indexOf('title=') + 6);
     let question = "&title=";
     let trim     = question.concat(titleId);
-    var id       = call.replace(trim, "")
+    var id       = call.replace(trim, "");
     
-    fetchPost(id,titleId)
+    fetchPost(id, titleId);
 }
 
-async function fetchPost(id,titleId) {
+async function fetchPost(id, titleId) {
     try {
         const response = await fetch('http://localhost:5000/posts/' + id)
         const post = await response.json();
