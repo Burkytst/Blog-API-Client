@@ -22,3 +22,32 @@ async function fetchPost(id) {
     }
 
 }
+
+
+
+
+$("#UpdatePost").click(function(){
+    axios.post('http://localhost:5000/posts', {
+        title: $("#title").val(),
+        content: $("#content").val(),
+        author: $("#author").val(),
+        tags: $("#tags").val()
+    })
+
+    .then(function (response) {
+      if(response){
+        alert("Successfully updated!");
+        window.location.href="index.html";
+      }
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+
+})
+
+
+
+
+  
+
